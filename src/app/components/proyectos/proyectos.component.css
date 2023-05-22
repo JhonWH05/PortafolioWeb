@@ -1,0 +1,35 @@
+ul {
+    position: relative;
+  }
+  
+  .expandable {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .expandable:hover {
+    transform: scale(1.8); /* Ajusta el tamaño de expansión según tu preferencia */
+    z-index: 2;
+  }
+  
+  .expanded-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 3;
+  }
+  
+  .expandable:hover .expanded-content {
+    display: block;
+  }
+
+  button{
+    background-color: #9fd5d1;
+    width: 100%;
+    
+  }
